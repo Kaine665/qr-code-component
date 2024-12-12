@@ -1,0 +1,114 @@
+@import url("https://fonts.google.com/specimen/Outfit");
+
+/* 初始化 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 0.9375rem;
+  width: 100%;
+  min-height: 100vh;
+
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+:root {
+  /* colors */
+  --white: hsl(0, 0%, 100%);
+  --slate-300: hsl(212, 45%, 89%);
+  --slate-500: hsl(216, 15%, 48%);
+  --slate-900: hsl(218, 44%, 22%);
+
+  /* font family */
+  --font-outfit: "Outfit";
+}
+
+/* 实用类 */
+/* bg-colors */
+.bg-white {
+  background-color: var(--white);
+}
+
+.bg-slate300 {
+  background-color: var(--slate-300);
+}
+
+/* font colors */
+.font-color-slate300 {
+  color: var(--slate-300);
+}
+
+.font-color-slate500 {
+  color: var(--slate-500);
+}
+
+.font-color-slate900 {
+  color: var(--slate-900);
+}
+
+/* font family */
+.font-family-outfit {
+  font-family: var(--font-outfit);
+}
+
+/* font weight */
+.font-weight-300 {
+  font-weight: 300;
+}
+
+.font-weight-700 {
+  font-weight: 700;
+}
+
+/* start style */
+body {
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  width: 22.5%;
+  height: auto;
+  padding: 18px;
+  padding-bottom: 40px;
+
+  /* border */
+  border-radius: 15px;
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.main-img > img {
+  width: 100%;
+
+  border-radius: 12px;
+}
+
+.article {
+  padding: 0 15px;
+
+  text-align: center;
+}
+
+.article > h1 {
+  padding-top: 20px;
+}
+
+.article > p {
+  padding-top: 15px;
+}
+
+.attribution {
+  position: absolute;
+  bottom: 20px;
+}
